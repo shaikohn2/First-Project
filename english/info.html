@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head> 
+     <title>Information</title>
+     <meta name="description" content="A page for plants.">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="/js/jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
+     <script src="/js/javascript.js" language="javascript" type="text/javascript"></script>
+     <script src='https://www.google.com/recaptcha/api.js?hl=en-GB'></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177280702-1"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177280702-1');
+</script>
+</head>
+<body>
+<!-- MENU -->
+<div class="nav">
+    <a href="/english/homepage"><img class="logo" src="/photos/logo.png"></a>
+  <div class="topnav" id="myTopnav">
+    <a href="/english/homepage" id="mobile">Homepage</a>
+    <a href="/english/gallery">Gallery</a>
+    <a class="actual" href="/english/info">Info</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="/index" id="flag-position"><img class="flag" src="/photos/spanish.png" alt="Spanish" title="Spanish"></a>
+</div>
+</div>
+<div id="info-img"><p class="info-title">INFO</p></div
+<!-- INFO -->
+     <div class="info-block-first">
+          <span class="info-cat">SHAI</span>
+          <div class="info-button">
+               <button class="collapsible" type="button">About us</button>
+               <div class="contents">
+                    <p>Lorem Ipsum</p>
+               </div>
+          </div>
+          <div class="info-button">
+               <button class="collapsible" type="button">Our service</button>
+               <div class="contents">
+                    <p>Lorem Ipsum</p>
+               </div>
+          </div>
+     </div>
+<!-- FORM -->
+        <form action="/php/form.php" class="background" method="post" onsubmit ="return validate();">
+         <div class="background-rgba">
+              <h1 class="contact">Contact form</h1>
+              <div id="error"></div>
+         <div>
+            <div>
+              <input class="form-inputs" id="name" name="name" placeholder="Name" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Lastname" type="text">
+            </div>
+            <div>
+              <input class="form-inputs" id="email" name="email" placeholder="Email" type="text">
+              <input class="form-inputs" id="cellphone" name="cellphone" placeholder="Cellphone" type="text">
+            </div>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Message (maximum 50 characters)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
+         </div>
+            <div class="text-xs-center">
+              <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
+            </div>
+              <input id="submit" name="grecaptcha.execute" type="submit" value="Send">
+         </div>
+     </form>
+<!-- FOOTER -->
+     <div id="footer">
+          <div id="footer-in">
+                <div class="footer-col">
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">A page dedicated to plants, especially cactus and succulents.</p>
+                    <ul id="foot-col-1">
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Homepage" title="Homepage"> <a class="hover-blue" href="index">Homepage</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Gallery" title="Gallery"> <a class="hover-blue" href="test">Gallery</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Info" title="Info"> <a class="hover-blue" href="otros/otros">Info</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col-2">
+                    <span class="title-footer">CONTACT</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">We are at your disposal for inquiries and reservations 24 hours a day, every day of the year, through the following channels:</p>
+                    <ul id="foot-col-2">
+                         <li><img src="https://www.bahelitours.com/img/contact-form-icon.png" alt="Form" title="Form"> <a class="hover-blue" href="#contacto">Contact form</a></li>
+                         <li><img src="https://www.bahelitours.com/img/mail-icon-blue.png" alt="Email" title="Email"><a class="hover-blue" href="mailto:contacto@shai.com.ar">contacto@shai.com.ar</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col">
+                    <span class="title-footer">UBICATION</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Page created in Argentina.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1sen!2sar!4v1620221931658!5m2!1sen!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div style="clear: both;"></div>
+     </div>
+</body>
+</html>

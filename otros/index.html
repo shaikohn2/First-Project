@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+     <title>Cactus y suculentas</title>
+     <meta name="description" content="En esta página vamos a probar muchas boludeces.">
+     <meta name="keywords" content="plantas,cactus,">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+     <link rel="icon" type="image/png" href="/photos/favicon-ico.jpg">
+     <link rel="stylesheet" type="text/js" href="/js/javascript.js">
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     <script src="/js/javascript.js" language="javascript" type="text/javascript"></script>
+     <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177280702-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177280702-1');
+</script>
+<script>
+      var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 2500);
+        var x;
+        const img = document.querySelectorAll(".images img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();
+    </script>
+</head>
+<body>
+<!-- MENÚ  -->
+<div class="nav">
+    <a href="index"><img class="logo" src="/photos/logo.png"></a>
+  <div class="topnav" id="myTopnav">
+    <a class="actual" href="index" id="mobile">Inicio</a>
+    <a href="test">Galería</a>
+    <a href="otros/otros">Info</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="/english/homepage" id="flag-position"><img class="flag" src="/photos/english.png" alt="English" title="English"></a>
+</div>
+</div>
+     <div class="content">
+           <div class="images">
+              <img src="/photos/gallery/g1.jpg">
+              <img src="/photos/gallery/g2.jpg">
+              <img src="/photos/gallery/g3.jpg">
+           </div>
+        </div>
+        <div id="word-width"><p class="homepage-esp">INICIO</p></div>
+<!-- Selector con tabla -->
+    <select id = "cactus" onchange = "table()">
+        <option disabled selected> -- Elige una especie -- </option>
+        <option value="1">Cactus de San Pedro</option>
+        <option value="2">Haworthia cooperi</option>
+        <option value="3">Aloe vera</option>
+        <option value="4">Aeonium</option>
+    </select>
+        <div id="op1" class="options">
+            <li><img class="plant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Echinopsis_pachanoi_en_Huaraz.jpg/1024px-Echinopsis_pachanoi_en_Huaraz.jpg"></li>
+            <li class="species">Cactus de San Pedro</li>
+            <li class="condition">Lugar de origen</li>
+            <li class="data">Los Andes</li>
+            <li class="condition">Descripción</li>
+            <li class="data">Cacto arbóreo de porte columnar que mide de 3 a 7 m de alto</li>
+            <li class="condition">Cultivo</li>
+            <li class="data">Puede soportar temperaturas bajas. Requiere un suelo fértil y bien drenado. Es mejor mantenerlo en semisombra durante el verano en latitudes de clima templado.</li>
+        </div>
+        <div id="op2" class="options">
+            <li><img class="plant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gardenology-IMG_5346_hunt10mar.jpg/800px-Gardenology-IMG_5346_hunt10mar.jpg"></li>
+            <li class="species">Haworthia cooperi</li>
+            <li class="condition">Lugar de origen</li>
+            <li class="data">Provincia Cabo Oriental</li>
+            <li class="condition">Descripción</li>
+            <li class="data">Planta suculenta perennifolia con 30-40 hojas dispuestas en forma de roseta</li>
+            <li class="condition">Cultivo</li>
+            <li class="data">Requiere que las temperaturas mínimas no desciendan de 4ºC y se puede ubicar a pleno sol o en semisombra</li>
+        </div>
+        <div id="op3" class="options">
+            <li><img class="plant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Aloe_vera_-_Agri-Horticultural_Society_of_India_-_Alipore_-_Kolkata_2013-01-05_2327.JPG/800px-Aloe_vera_-_Agri-Horticultural_Society_of_India_-_Alipore_-_Kolkata_2013-01-05_2327.JPG"></li>
+            <li class="species">Aloe vera</li>
+            <li class="condition">Lugar de origen</li>
+            <li class="data">Arabia</li>
+            <li class="condition">Descripción</li>
+            <li class="data">Planta suculenta con tallo corto de hasta 30 cm, erecto, sus hojas pueden medir hasta 40-50 cm de largo por 10-15 cm de ancho</li>
+            <li class="condition">Cultivo</li>
+            <li class="data">Requiere que las temperaturas mínimas no desciendan de 0ºC y se puede ubicar a pleno sol o en semisombra</li>
+        </div>
+        <div id="op4" class="options">
+            <li><img class="plant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Aeonium_lindleyi_P1050450.JPG/800px-Aeonium_lindleyi_P1050450.JPG"></li>
+            <li class="species">Aeonium</li>
+            <li class="condition">Lugar de origen</li>
+            <li class="data">Islas Canarias</li>
+            <li class="condition">Descripción</li>
+            <li class="data">Sus hojas forman un roseta sobre basal alrededor de un tallo firme</li>
+            <li class="condition">Cultivo</li>
+            <li class="data">Requiere poca agua (un riego cada 15 días) y en invierno esta frecuencia se reduce. Necesita sol o semisombra</li>
+        </div><br>
+<!-- FORMULARIO -->
+     <form action="/php/form.php" class="background" method="post" onsubmit ="return validar();">
+         <div class="background-rgba">
+              <h1 class="contact">Contacto</h1>
+              <div id="error"></div>
+         <div>
+            <div>
+              <input class="form-inputs" id="name" name="name" placeholder="Nombre" type="text">
+              <input class="form-inputs" id="lastname" name="lastname" placeholder="Apellido" type="text">
+            </div>
+            <div>
+              <input class="form-inputs" id="email" name="email" placeholder="Correo electrónico" type="text">
+              <input class="form-inputs" id="cellphone" name="cellphone" placeholder="Teléfono" type="text">
+            </div>
+              <textarea class="form-inputs" cols="100" id="message" name="message" onkeyup="count_down(this);" placeholder="Mensaje (máximo 50 caracteres)" rows="4"></textarea><br>
+                <span class="counter" id="count">50</span>
+         </div>
+            <div class="text-xs-center">
+              <div class="g-recaptcha" data-sitekey="6LclzMUZAAAAAG0tX_MzE7uV6JVjHSwX6r-_nu26"></div>
+            </div>
+              <input id="submit" name="grecaptcha.execute" type="submit" value="Enviar">
+         </div>
+     </form>
+      <div id="footer">
+          <div id="footer-in">
+               <div class="footer-col">
+                    <span class="title-footer"><a href="/"><img src="/photos/logo.png" alt="Shai" title="SHAI"></a></span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Una página dedicada a las plantas, especialmente a los cactus y suculentas.</p>
+                    <ul id="foot-col-1">
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Inicio" title="Inicio"> <a class="hover-blue" href="index">Inicio</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Galería" title="Galería"> <a class="hover-blue" href="test">Galería</a></li>
+                         <li><img src="https://www.bahelitours.com/dev/img/arrow-right-blue.png" alt="Info" title="Info"> <a class="hover-blue" href="otros/otros">Info</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col-2">
+                    <span class="title-footer">CONTACTO</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Estamos a su disposición para consultas y reservas las 24 horas del día, todos los días del año, a través de los siguientes canales:</p>
+                    <ul id="foot-col-2">
+                         <li><img src="https://www.bahelitours.com/img/contact-form-icon.png" alt="Formulario" title="Formulario"> <a class="hover-blue" href="#contacto">Formulario de contacto</a></li>
+                         <li><img src="https://www.bahelitours.com/img/mail-icon-blue.png" alt="Email" title="Email"><a class="hover-blue" href="mailto:contacto@shai.com.ar">contacto@shai.com.ar</a></li>
+                    </ul>
+               </div>
+               <div class="footer-col">
+                    <span class="title-footer">UBICACIÓN</span>
+                    <div class="foot-separator"></div>
+                    <p class="text-footer">Página creada en la Argentina.</p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1616671551772!5m2!1ses!2sar" height="200" width="350"; style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div style="clear: both;"></div>
+     </div>
+</body>
+</html>
